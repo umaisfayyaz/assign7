@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+
+			font-family: arial;
+			background: linear-gradient(to top left, #6600ff 0%, #ff99cc 100%);
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 100vh;
+		}
+		h1{
+			text-align: center;
+			color: white;
+		}
+		#container{
+			border-collapse: collapse;
+			border: 1px solid black;
+			height: 230px;
+			width: 200px;
+			border-radius: 4px;
+			box-shadow: 4px 4px 4px;
+			margin: 0 auto;
+		}
+
+		input[type=text]{
+			width: 193px;
+			height: 30px;
+			border-radius: 4px;
+			border: none;
+			margin:3px;
+		}
+		input[type=button]{
+			width: 40px;
+			height: 40px;
+			padding: 10px;
+			margin: 3px;
+			border-radius: 50%;
+			border: none;
+		}
+		input[type=button]:hover{
+			background-color: purple;
+			color: white;
+			transition: 0.4s ease;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+		<h1>Calculater Using Js</h1>
+<div id="container">
+
+	<form id="calc">
+		<input type="text" name="name" placeholder="type here">
+		<br>
+		<input type="button" value="1" onclick="calc.name.value += '1'">
+		<input type="button" value="2" onclick="calc.name.value += '2'">
+		<input type="button" value="3" onclick="calc.name.value += '3'">
+		<input type="button" value="+" onclick="calc.name.value += '+'">
+		<br>
+		<input type="button" value="4" onclick="calc.name.value += '4'">
+		<input type="button" value="5" onclick="calc.name.value += '5'">
+		<input type="button" value="6" onclick="calc.name.value += '6'">
+		<input type="button" value="-" onclick="calc.name.value += '-'">
+		<br>
+		<input type="button" value="7" onclick="calc.name.value += '7'">
+		<input type="button" value="8" onclick="calc.name.value += '8'">
+		<input type="button" value="9" onclick="calc.name.value += '9'">
+		<input type="button" value="x" onclick="calc.name.value += '*'">
+		<br>
+		<input type="button" value="0" onclick="calc.name.value += '0'">
+		<input type="button" value="C" onclick="calc.name.value = calc.name.value = '' ">
+		<input type="button" value="=" onclick="calc.name.value = eval(calc.name.value)">
+		<input type="button" value="/" onclick="calc.name.value += '/'">
+	</form>
+
+
+</div>
+
+
+
+</body>
+</html>
